@@ -78,7 +78,7 @@ export default function ShopInfoSidebar() {
 
       {/* Promo Banner */}
       <div className="relative rounded-2xl overflow-hidden bg-black text-white aspect-[21/9] group cursor-pointer shadow-sm">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:scale-105 transition-transform duration-500" />
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Banner" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:scale-105 transition-transform duration-500" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent flex flex-col justify-center p-6">
           <h3 className="font-bold text-lg mb-1 max-w-[150px] leading-tight">Premium Sneakers For Every Style</h3>
           <p className="text-[10px] text-white/80">Authentic • Quality • Affordable</p>
@@ -98,7 +98,7 @@ export default function ShopInfoSidebar() {
           {LIKED_PRODUCTS.map(product => (
             <div key={product.id} className="flex gap-3 group cursor-pointer">
               <div className="w-20 h-20 rounded-xl overflow-hidden bg-gray-100 shrink-0">
-                <img src={product.image} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
               </div>
               <div className="flex-1 py-1">
                 <div className="flex justify-between items-start">
