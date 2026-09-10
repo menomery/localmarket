@@ -92,8 +92,8 @@ export default function Navbar() {
               <>
                 <div className="flex items-center gap-2 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors p-1">
                   <div className="w-8 h-8 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
-                    {profile?.avatarUrl ? (
-                      <img src={profile.avatarUrl} alt="Avatar" className="w-full h-full object-cover" />
+                    {profile?.photoURL ? (
+                      <img src={profile.photoURL} alt="Avatar" className="w-full h-full object-cover" />
                     ) : (
                       <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Avatar" className="w-full h-full object-cover" />
                     )}
