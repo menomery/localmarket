@@ -56,7 +56,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <HeadphonesIcon className="w-5 h-5 text-[#4ade80]" />
-                    <div><div className="text-xs font-bold">Local Support</div><div className="text-[10px] text-gray-300">We're here to help</div></div>
+                    <div><div className="text-xs font-bold">Local Support</div><div className="text-[10px] text-gray-300">We&apos;re here to help</div></div>
                   </div>
                 </div>
               </div>
