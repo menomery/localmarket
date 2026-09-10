@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { PlayCircle, ShieldCheck, CreditCard, Truck, HeadphonesIcon, ArrowRight, Heart, Star, CheckCircle } from "lucide-react";
+import { PlayCircle, ShieldCheck, CreditCard, Truck, HeadphonesIcon, ArrowRight, Heart, Star, CheckCircle, Store } from "lucide-react";
 
 const CATEGORIES = [
   { name: "Fashion", icon: "👔" },
@@ -162,9 +162,9 @@ export default function Home() {
                 </div>
                 {/* Thumbnails */}
                 <div className="w-full md:w-48 grid grid-cols-2 md:grid-cols-1 gap-2">
-                  <div className="aspect-video md:aspect-auto md:h-24 bg-gray-200 rounded-lg overflow-hidden relative"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&q=80" className="w-full h-full object-cover" /></div>
-                  <div className="aspect-video md:aspect-auto md:h-24 bg-gray-200 rounded-lg overflow-hidden relative"><img src="https://images.unsplash.com/photo-1598327105666-5b89351cb31b?w=200&q=80" className="w-full h-full object-cover" /></div>
-                  <div className="hidden md:block aspect-video md:aspect-auto md:h-24 bg-gray-200 rounded-lg overflow-hidden relative"><img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=200&q=80" className="w-full h-full object-cover" /></div>
+                  <div className="aspect-video md:aspect-auto md:h-24 bg-gray-200 rounded-lg overflow-hidden relative"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&q=80" alt="thumbnail 1" className="w-full h-full object-cover" /></div>
+                  <div className="aspect-video md:aspect-auto md:h-24 bg-gray-200 rounded-lg overflow-hidden relative"><img src="https://images.unsplash.com/photo-1598327105666-5b89351cb31b?w=200&q=80" alt="thumbnail 2" className="w-full h-full object-cover" /></div>
+                  <div className="hidden md:block aspect-video md:aspect-auto md:h-24 bg-gray-200 rounded-lg overflow-hidden relative"><img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=200&q=80" alt="thumbnail 3" className="w-full h-full object-cover" /></div>
                 </div>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function Home() {
 
             {/* Promo Banner 1 */}
             <div className="relative rounded-2xl overflow-hidden bg-blue-900 text-white aspect-[4/3] group cursor-pointer">
-              <img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=400&q=80" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50 group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=400&q=80" alt="Promo" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50 group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
                 <h3 className="font-bold text-xl mb-1">Support Ugandan Businesses</h3>
                 <p className="text-sm text-white/80 mb-4">Local products. Local jobs. A stronger Uganda.</p>
