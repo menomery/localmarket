@@ -1,17 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { PlayCircle, Users, TrendingUp, Sparkles, MapPin, Star, Zap, ShoppingBag, Store } from "lucide-react";
+import { PlayCircle, Users, TrendingUp, Sparkles, MapPin, Star, Zap, ShoppingBag, Store, ArrowRight, Shirt, Footprints, Smartphone, Laptop, Scissors, Pizza, Armchair } from "lucide-react";
 
 export default function DiscoverSidebar() {
   const CATEGORIES = [
-    { name: "Fashion", icon: "👗", color: "bg-pink-100" },
-    { name: "Shoes", icon: "👟", color: "bg-blue-100" },
-    { name: "Phones", icon: "📱", color: "bg-gray-100" },
-    { name: "Electronics", icon: "💻", color: "bg-indigo-100" },
-    { name: "Beauty", icon: "💄", color: "bg-rose-100" },
-    { name: "Food", icon: "🍔", color: "bg-orange-100" },
-    { name: "Furniture", icon: "🛋️", color: "bg-green-100" }
+    { name: "Fashion", icon: <Shirt className="w-4 h-4 text-pink-600" />, color: "bg-pink-100" },
+    { name: "Shoes", icon: <Footprints className="w-4 h-4 text-blue-600" />, color: "bg-blue-100" },
+    { name: "Phones", icon: <Smartphone className="w-4 h-4 text-indigo-600" />, color: "bg-indigo-100" },
+    { name: "Electronics", icon: <Laptop className="w-4 h-4 text-blue-500" />, color: "bg-blue-50" },
+    { name: "Beauty", icon: <Scissors className="w-4 h-4 text-pink-500" />, color: "bg-pink-50" },
+    { name: "Food", icon: <Pizza className="w-4 h-4 text-orange-500" />, color: "bg-orange-100" },
+    { name: "Furniture", icon: <Armchair className="w-4 h-4 text-green-600" />, color: "bg-green-100" }
   ];
 
   return (
@@ -50,7 +50,7 @@ export default function DiscoverSidebar() {
       <div>
         <div className="flex justify-between items-center mb-4 px-2">
           <h3 className="font-bold text-gray-900">Categories</h3>
-          <Link href="/categories" className="text-xs font-semibold text-[#0A8B42] hover:underline">View All →</Link>
+          <Link href="/categories" className="text-xs font-semibold text-[#0A8B42] hover:underline flex items-center">View All <ArrowRight className="w-3 h-3 ml-1" /></Link>
         </div>
         <div className="space-y-1">
           {CATEGORIES.map(cat => (
@@ -93,8 +93,8 @@ export default function DiscoverSidebar() {
         </div>
         <h3 className="font-bold text-lg mb-2">Want to sell on LocalMarket?</h3>
         <p className="text-sm text-green-50 mb-4">Create your digital shop and reach more customers today.</p>
-        <Link href="/seller" className="block w-full bg-white text-[#0A8B42] font-bold py-2.5 rounded-xl text-center hover:bg-gray-50 transition-colors text-sm">
-          Open a Shop →
+        <Link href="/seller" className="block w-full bg-white text-[#0A8B42] font-bold py-2.5 rounded-xl text-center flex items-center justify-center hover:bg-gray-50 transition-colors text-sm">
+          Open a Shop <ArrowRight className="w-4 h-4 ml-1" />
         </Link>
       </div>
 
