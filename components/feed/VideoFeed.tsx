@@ -9,7 +9,7 @@ interface VideoFeedProps {
 }
 
 export default function VideoFeed({ initialProducts }: VideoFeedProps) {
-  const [products, setProducts] = useState<Product[]>(initialProducts);
+  const [products] = useState<Product[]>(initialProducts);
   const [activeIndex, setActiveIndex] = useState(0);
   const feedRef = useRef<HTMLDivElement>(null);
 

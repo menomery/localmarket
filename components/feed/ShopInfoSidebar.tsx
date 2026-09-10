@@ -1,6 +1,6 @@
 "use client";
 
-import { Bookmark, Star, CheckCircle, MapPin, Phone, MessageCircle, ArrowRight, ShieldCheck } from "lucide-react";
+import { Bookmark, Star, MapPin, Phone, MessageCircle, ArrowRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function ShopInfoSidebar() {
