@@ -49,7 +49,7 @@ export default function VideoPost({ product, isActive }: VideoPostProps) {
   };
 
   return (
-    <div className="relative w-full h-full bg-black flex justify-center items-center overflow-hidden cursor-pointer" onClick={togglePlay}>
+    <div className="relative w-full h-full bg-black flex items-center justify-center overflow-hidden cursor-pointer" onClick={togglePlay}>
       
       <video
         ref={videoRef}

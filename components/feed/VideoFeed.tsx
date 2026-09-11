@@ -42,13 +42,13 @@ export default function VideoFeed({ initialProducts }: VideoFeedProps) {
   return (
     <div 
       ref={feedRef}
-      className="w-full max-w-lg mx-auto bg-black h-[calc(100vh-4rem)] overflow-y-scroll snap-y snap-mandatory hide-scrollbar"
+      className="w-full max-w-lg mx-auto bg-black h-full overflow-y-scroll snap-y snap-mandatory hide-scrollbar"
       style={{ scrollBehavior: 'smooth' }}
     >
       {products.map((product, index) => (
         <div 
           key={product.id} 
-          className="video-post-container snap-start"
+          className="video-post-container snap-start h-full w-full relative"
           data-index={index}
         >
           <VideoPost 
