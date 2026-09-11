@@ -1,6 +1,12 @@
+'use client';
 import { ShieldCheck, Truck, ShoppingBag, Heart } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  
+  if (pathname === '/discover') return null;
+
   return (
     <div className="bg-[#F3Fdf6] border-t border-green-100 py-4 mt-auto">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-[10px] text-green-800">
