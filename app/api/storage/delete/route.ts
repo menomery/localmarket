@@ -30,8 +30,9 @@ export async function DELETE(req: NextRequest) {
     await drive.files.delete({ fileId });
 
     return NextResponse.json({ success: true });
-  } catch (error: any) {
-    console.error("Google Drive Delete Error:", error);
-    return NextResponse.json({ error: error.message || "Internal server error" }, { status: 500 });
+  } catch (error: unknown) {
+    const errMessage = error instanceof Error ? error.message : "Unknown error";
+    console.error("Google Drive Delete Error:", errMessage);
+    return NextResponse.json({ error: errMessage || "Internal server error" }, { status: 500 });
   }
 }
