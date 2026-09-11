@@ -13,7 +13,8 @@
     "react-dom": "19.1.0",
     "next": "15.5.25",
     "firebase": "^10.12.0",
-    "lucide-react": "latest"
+    "lucide-react": "latest",
+    "googleapis": "latest"
   },
   "devDependencies": {
     "typescript": "^5",
