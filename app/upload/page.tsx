@@ -30,8 +30,8 @@ export default function UploadPage() {
       // We pass the file to our storage abstraction.
       const res = await uploadFile(file, "videos");
       setResult(res);
-    } catch (err: any) {
-      setError(err.message || "Failed to upload file");
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Failed to upload file");
     } finally {
       setUploading(false);
     }
