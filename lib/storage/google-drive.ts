@@ -47,7 +47,7 @@ export async function deleteFromGoogleDrive(fileId: string): Promise<void> {
 }
 
 export async function getGoogleDriveFileUrl(fileId: string): Promise<string> {
-  // Drive files are usually accessed via an API endpoint or a specific drive.google.com format.
-  // We'll return a proxy URL or direct URL depending on sharing settings.
-  return `/api/storage/file/${fileId}`;
+  // To play videos directly in a <video> tag, we use the uc?id= format.
+  // Note: For large videos, Google might show a virus scan warning which breaks direct playback.
+  return `https://drive.google.com/uc?export=view&id=${fileId}`;
 }
