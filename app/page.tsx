@@ -1,56 +1,16 @@
-"use client";
-
 import Link from "next/link";
-import { Search, Bell, Home, PlayCircle, Grid, Store, Heart, Star, CheckCircle, ShieldCheck, CreditCard, Truck, HeadphonesIcon, ArrowRight, Play, ShoppingBag } from "lucide-react";
+import { ArrowRight, Star, ShieldCheck, Heart, Store, Play, CheckCircle } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <div className="bg-[#F8F9FA] min-h-screen font-sans">
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex flex-col lg:flex-row gap-6">
+    <div className="bg-[#F8F9FA] min-h-screen font-sans overflow-x-hidden">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="grid grid-cols-12 gap-4 lg:gap-6">
           
-          {/* LEFT COLUMN (Approx 72%) */}
-          <div className="flex-1 min-w-0 space-y-8">
+          {/* LEFT COLUMN (Main Content) */}
+          <div className="col-span-12 lg:col-span-8 xl:col-span-9 flex flex-col gap-4 lg:gap-6">
             
             {/* HERO BANNER */}
-            <div className="relative rounded-2xl overflow-hidden bg-[#075e2d] text-white h-[380px] shadow-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80" 
-                alt="Shopping" 
-                className="absolute right-0 top-0 h-full w-2/3 object-cover object-left mask-image-gradient"
-                style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 40%)' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#064e25] via-[#075e2d]/90 to-transparent z-10" />
-              
-              <div className="relative z-20 h-full flex flex-col p-10 justify-between">
-                <div>
-                  <div className="text-xs font-bold tracking-widest text-[#4ade80] mb-4 uppercase">LocalMarket</div>
-                  <h1 className="text-4xl lg:text-5xl font-extrabold leading-[1.1] mb-4 text-white">
-                    Discover local products.<br/>Shop local.
-                  </h1>
-                  <p className="text-sm lg:text-base text-gray-200 max-w-md mb-8 leading-relaxed">
-                    Support local businesses and find amazing products from trusted sellers across Uganda.
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <Link href="/discover" className="bg-[#0A8B42] hover:bg-[#087336] text-white px-6 py-2.5 rounded-full font-bold transition-colors flex items-center gap-2 shadow-lg shadow-green-900/20 text-sm">
-                      Start Discovering <ArrowRight className="w-4 h-4" />
-                    </Link>
-                    <Link href="/seller" className="bg-transparent hover:bg-white/10 text-white border border-white/30 px-6 py-2.5 rounded-full font-bold transition-colors text-sm">
-                      Open a Shop
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-4 gap-4 pt-6 border-t border-white/10 mt-auto">
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-[#4ade80]" />
-                    <div><div className="text-xs font-bold">Verified Sellers</div><div className="text-[10px] text-gray-300">Shop with confidence</div></div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CreditCard className="w-5 h-5 text-[#4ade80]" />
-                    <div><div className="text-xs font-bold">Secure Payments</div><div className="text-[10px] text-gray-300">Flexible options</div></div>
-                  </div>
-                  <div className="flex items-center gap-2">
             <div className="relative rounded-2xl overflow-hidden bg-[#075e2d] text-white h-[250px] lg:h-[300px] shadow-sm">
               <div className="absolute right-0 top-0 w-1/2 h-full opacity-60">
                 <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80" alt="Hero" className="w-full h-full object-cover" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 40%)' }} />
